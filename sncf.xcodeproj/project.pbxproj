@@ -1,0 +1,846 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E1E0DAC234BF0A140544F34 /* Pods_sncf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72AAC9389F995FB646EE16D6 /* Pods_sncf.framework */; };
+		5B1BF868254DD14D00ADF200 /* Reduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BF867254DD14D00ADF200 /* Reduction.swift */; };
+		5B1BF86D254DD23600ADF200 /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BF86C254DD23600ADF200 /* TicketView.swift */; };
+		5B529095254B141F00BA01A1 /* sncfApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B529094254B141F00BA01A1 /* sncfApp.swift */; };
+		5B529099254B142400BA01A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B529098254B142400BA01A1 /* Assets.xcassets */; };
+		5B52909C254B142400BA01A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B52909B254B142400BA01A1 /* Preview Assets.xcassets */; };
+		5B5290C3254B14FF00BA01A1 /* TrainSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5290C2254B14FF00BA01A1 /* TrainSearchView.swift */; };
+		5B5290DF254B222600BA01A1 /* AvailableTrainsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5290DE254B222600BA01A1 /* AvailableTrainsView.swift */; };
+		5B5290F2254B2E8800BA01A1 /* Journey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5290F1254B2E8800BA01A1 /* Journey.swift */; };
+		5B5290FA254B33DF00BA01A1 /* CitySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5290F9254B33DF00BA01A1 /* CitySelectionView.swift */; };
+		5B529110254B679B00BA01A1 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B52910F254B679B00BA01A1 /* DateUtils.swift */; };
+		5B529122254C2AE600BA01A1 /* ReservationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B529121254C2AE600BA01A1 /* ReservationView.swift */; };
+		5B529127254C2B6800BA01A1 /* TicketInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B529126254C2B6800BA01A1 /* TicketInformationView.swift */; };
+		5B52912C254C4E4300BA01A1 /* ToStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B52912B254C4E4300BA01A1 /* ToStation.swift */; };
+		5B529134254C4EA200BA01A1 /* Train.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B529133254C4EA200BA01A1 /* Train.swift */; };
+		5B529139254C4EE800BA01A1 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B529138254C4EE800BA01A1 /* Ticket.swift */; };
+		5B529143254C508200BA01A1 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B529142254C508200BA01A1 /* Client.swift */; };
+		5B52914D254C50F900BA01A1 /* Wagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B52914C254C50F900BA01A1 /* Wagon.swift */; };
+		5B52915A254C599900BA01A1 /* FromStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B529159254C599900BA01A1 /* FromStation.swift */; };
+		5B529162254C9BC500BA01A1 /* Queries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B529161254C9BC500BA01A1 /* Queries.swift */; };
+		5B52916A254CA6AC00BA01A1 /* PlaceToSit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B529169254CA6AC00BA01A1 /* PlaceToSit.swift */; };
+		5B529172254CB19D00BA01A1 /* ClientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B529171254CB19D00BA01A1 /* ClientView.swift */; };
+		5B529177254CB25C00BA01A1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B529176254CB25C00BA01A1 /* LoginView.swift */; };
+		5BB4D43A254CD00D000CD221 /* UserTicketsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB4D439254CD00D000CD221 /* UserTicketsView.swift */; };
+		5BB4D443254D9676000CD221 /* TicketCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB4D442254D9676000CD221 /* TicketCreation.swift */; };
+		5BDAA6172555949900186EFE /* TestDataCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDAA6162555949900186EFE /* TestDataCreation.swift */; };
+		5BDAA6272555D4C400186EFE /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDAA6262555D4C400186EFE /* RegistrationView.swift */; };
+		5BDAA62F2555FECC00186EFE /* ClientSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDAA62E2555FECB00186EFE /* ClientSettingsView.swift */; };
+		7BDAB7DA4E8F0C3C050416E4 /* Pods_sncfTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF56F5F336B049C162E47A9 /* Pods_sncfTests.framework */; };
+		F923ECF0B68E322E3D1FC0AC /* Pods_sncf_sncfUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E3BF04B44F7F64BC58D6D4 /* Pods_sncf_sncfUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B5290A3254B142500BA01A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B529089254B141F00BA01A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B529090254B141F00BA01A1;
+			remoteInfo = sncf;
+		};
+		5B5290AE254B142500BA01A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B529089254B141F00BA01A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B529090254B141F00BA01A1;
+			remoteInfo = sncf;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		039EB877E437AC25D89DECF0 /* Pods-sncf-sncfUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sncf-sncfUITests.debug.xcconfig"; path = "Target Support Files/Pods-sncf-sncfUITests/Pods-sncf-sncfUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		28E3BF04B44F7F64BC58D6D4 /* Pods_sncf_sncfUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sncf_sncfUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FA984B6C080972DB34C2CE3 /* Pods-sncfTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sncfTests.release.xcconfig"; path = "Target Support Files/Pods-sncfTests/Pods-sncfTests.release.xcconfig"; sourceTree = "<group>"; };
+		5B1BF867254DD14D00ADF200 /* Reduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reduction.swift; sourceTree = "<group>"; };
+		5B1BF86C254DD23600ADF200 /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = "<group>"; };
+		5B529091254B141F00BA01A1 /* sncf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sncf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B529094254B141F00BA01A1 /* sncfApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sncfApp.swift; sourceTree = "<group>"; };
+		5B529098254B142400BA01A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B52909B254B142400BA01A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5B52909D254B142400BA01A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B5290A2254B142500BA01A1 /* sncfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sncfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B5290AD254B142500BA01A1 /* sncfUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sncfUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B5290C2254B14FF00BA01A1 /* TrainSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainSearchView.swift; sourceTree = "<group>"; };
+		5B5290DE254B222600BA01A1 /* AvailableTrainsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableTrainsView.swift; sourceTree = "<group>"; };
+		5B5290F1254B2E8800BA01A1 /* Journey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journey.swift; sourceTree = "<group>"; };
+		5B5290F9254B33DF00BA01A1 /* CitySelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySelectionView.swift; sourceTree = "<group>"; };
+		5B52910F254B679B00BA01A1 /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		5B529121254C2AE600BA01A1 /* ReservationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationView.swift; sourceTree = "<group>"; };
+		5B529126254C2B6800BA01A1 /* TicketInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketInformationView.swift; sourceTree = "<group>"; };
+		5B52912B254C4E4300BA01A1 /* ToStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToStation.swift; sourceTree = "<group>"; };
+		5B529133254C4EA200BA01A1 /* Train.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Train.swift; sourceTree = "<group>"; };
+		5B529138254C4EE800BA01A1 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		5B529142254C508200BA01A1 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		5B52914C254C50F900BA01A1 /* Wagon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wagon.swift; sourceTree = "<group>"; };
+		5B529159254C599900BA01A1 /* FromStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromStation.swift; sourceTree = "<group>"; };
+		5B529161254C9BC500BA01A1 /* Queries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queries.swift; sourceTree = "<group>"; };
+		5B529169254CA6AC00BA01A1 /* PlaceToSit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceToSit.swift; sourceTree = "<group>"; };
+		5B529171254CB19D00BA01A1 /* ClientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientView.swift; sourceTree = "<group>"; };
+		5B529176254CB25C00BA01A1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		5BB4D439254CD00D000CD221 /* UserTicketsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTicketsView.swift; sourceTree = "<group>"; };
+		5BB4D442254D9676000CD221 /* TicketCreation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketCreation.swift; sourceTree = "<group>"; };
+		5BDAA6162555949900186EFE /* TestDataCreation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDataCreation.swift; sourceTree = "<group>"; };
+		5BDAA6262555D4C400186EFE /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		5BDAA62E2555FECB00186EFE /* ClientSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientSettingsView.swift; sourceTree = "<group>"; };
+		62AD2B402990BEFCC2BD1E69 /* Pods-sncfTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sncfTests.debug.xcconfig"; path = "Target Support Files/Pods-sncfTests/Pods-sncfTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6DC5D2EB381A59A36E6E64C9 /* Pods-sncf.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sncf.release.xcconfig"; path = "Target Support Files/Pods-sncf/Pods-sncf.release.xcconfig"; sourceTree = "<group>"; };
+		72AAC9389F995FB646EE16D6 /* Pods_sncf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sncf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		790812E5B69CBFFCF9791642 /* Pods-sncf-sncfUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sncf-sncfUITests.release.xcconfig"; path = "Target Support Files/Pods-sncf-sncfUITests/Pods-sncf-sncfUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BBA26724C0294E0EDFDB4494 /* Pods-sncf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sncf.debug.xcconfig"; path = "Target Support Files/Pods-sncf/Pods-sncf.debug.xcconfig"; sourceTree = "<group>"; };
+		CAF56F5F336B049C162E47A9 /* Pods_sncfTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sncfTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B52908E254B141F00BA01A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E1E0DAC234BF0A140544F34 /* Pods_sncf.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B52909F254B142500BA01A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BDAB7DA4E8F0C3C050416E4 /* Pods_sncfTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B5290AA254B142500BA01A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F923ECF0B68E322E3D1FC0AC /* Pods_sncf_sncfUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		357C73C3025F159E9BE22853 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72AAC9389F995FB646EE16D6 /* Pods_sncf.framework */,
+				28E3BF04B44F7F64BC58D6D4 /* Pods_sncf_sncfUITests.framework */,
+				CAF56F5F336B049C162E47A9 /* Pods_sncfTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B529088254B141F00BA01A1 = {
+			isa = PBXGroup;
+			children = (
+				5B529093254B141F00BA01A1 /* sncf */,
+				5B529092254B141F00BA01A1 /* Products */,
+				5FF2A7E8267CB893A52F8ADB /* Pods */,
+				357C73C3025F159E9BE22853 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5B529092254B141F00BA01A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B529091254B141F00BA01A1 /* sncf.app */,
+				5B5290A2254B142500BA01A1 /* sncfTests.xctest */,
+				5B5290AD254B142500BA01A1 /* sncfUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B529093254B141F00BA01A1 /* sncf */ = {
+			isa = PBXGroup;
+			children = (
+				5BB4D441254D965D000CD221 /* Database Operations */,
+				5B52917C254CC0EB00BA01A1 /* User Management */,
+				5B52910E254B678D00BA01A1 /* Utils */,
+				5B5290E8254B291D00BA01A1 /* Models */,
+				5B5290C7254B197600BA01A1 /* Supporting Views */,
+				5B529094254B141F00BA01A1 /* sncfApp.swift */,
+				5B5290C2254B14FF00BA01A1 /* TrainSearchView.swift */,
+				5B5290DE254B222600BA01A1 /* AvailableTrainsView.swift */,
+				5B529098254B142400BA01A1 /* Assets.xcassets */,
+				5B52909D254B142400BA01A1 /* Info.plist */,
+				5B52909A254B142400BA01A1 /* Preview Content */,
+				5B529121254C2AE600BA01A1 /* ReservationView.swift */,
+				5BB4D439254CD00D000CD221 /* UserTicketsView.swift */,
+			);
+			path = sncf;
+			sourceTree = "<group>";
+		};
+		5B52909A254B142400BA01A1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5B52909B254B142400BA01A1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5B5290C7254B197600BA01A1 /* Supporting Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B5290F9254B33DF00BA01A1 /* CitySelectionView.swift */,
+				5B529126254C2B6800BA01A1 /* TicketInformationView.swift */,
+				5B1BF86C254DD23600ADF200 /* TicketView.swift */,
+			);
+			path = "Supporting Views";
+			sourceTree = "<group>";
+		};
+		5B5290E8254B291D00BA01A1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B5290F1254B2E8800BA01A1 /* Journey.swift */,
+				5B52912B254C4E4300BA01A1 /* ToStation.swift */,
+				5B529133254C4EA200BA01A1 /* Train.swift */,
+				5B529138254C4EE800BA01A1 /* Ticket.swift */,
+				5B529142254C508200BA01A1 /* Client.swift */,
+				5B52914C254C50F900BA01A1 /* Wagon.swift */,
+				5B529159254C599900BA01A1 /* FromStation.swift */,
+				5B529169254CA6AC00BA01A1 /* PlaceToSit.swift */,
+				5B1BF867254DD14D00ADF200 /* Reduction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5B52910E254B678D00BA01A1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5B52910F254B679B00BA01A1 /* DateUtils.swift */,
+				5BDAA6162555949900186EFE /* TestDataCreation.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5B52917C254CC0EB00BA01A1 /* User Management */ = {
+			isa = PBXGroup;
+			children = (
+				5B529176254CB25C00BA01A1 /* LoginView.swift */,
+				5B529171254CB19D00BA01A1 /* ClientView.swift */,
+				5BDAA6262555D4C400186EFE /* RegistrationView.swift */,
+				5BDAA62E2555FECB00186EFE /* ClientSettingsView.swift */,
+			);
+			path = "User Management";
+			sourceTree = "<group>";
+		};
+		5BB4D441254D965D000CD221 /* Database Operations */ = {
+			isa = PBXGroup;
+			children = (
+				5B529161254C9BC500BA01A1 /* Queries.swift */,
+				5BB4D442254D9676000CD221 /* TicketCreation.swift */,
+			);
+			path = "Database Operations";
+			sourceTree = "<group>";
+		};
+		5FF2A7E8267CB893A52F8ADB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BBA26724C0294E0EDFDB4494 /* Pods-sncf.debug.xcconfig */,
+				6DC5D2EB381A59A36E6E64C9 /* Pods-sncf.release.xcconfig */,
+				039EB877E437AC25D89DECF0 /* Pods-sncf-sncfUITests.debug.xcconfig */,
+				790812E5B69CBFFCF9791642 /* Pods-sncf-sncfUITests.release.xcconfig */,
+				62AD2B402990BEFCC2BD1E69 /* Pods-sncfTests.debug.xcconfig */,
+				2FA984B6C080972DB34C2CE3 /* Pods-sncfTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B529090254B141F00BA01A1 /* sncf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B5290B6254B142500BA01A1 /* Build configuration list for PBXNativeTarget "sncf" */;
+			buildPhases = (
+				07C90909E2C8A7609EBD9977 /* [CP] Check Pods Manifest.lock */,
+				5B52908D254B141F00BA01A1 /* Sources */,
+				5B52908E254B141F00BA01A1 /* Frameworks */,
+				5B52908F254B141F00BA01A1 /* Resources */,
+				1F3986F427E9A8B2056AA187 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sncf;
+			productName = sncf;
+			productReference = 5B529091254B141F00BA01A1 /* sncf.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5B5290A1254B142500BA01A1 /* sncfTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B5290B9254B142500BA01A1 /* Build configuration list for PBXNativeTarget "sncfTests" */;
+			buildPhases = (
+				652BFAE4A41F90E4E3CB20D7 /* [CP] Check Pods Manifest.lock */,
+				5B52909E254B142500BA01A1 /* Sources */,
+				5B52909F254B142500BA01A1 /* Frameworks */,
+				5B5290A0254B142500BA01A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B5290A4254B142500BA01A1 /* PBXTargetDependency */,
+			);
+			name = sncfTests;
+			productName = sncfTests;
+			productReference = 5B5290A2254B142500BA01A1 /* sncfTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5B5290AC254B142500BA01A1 /* sncfUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B5290BC254B142500BA01A1 /* Build configuration list for PBXNativeTarget "sncfUITests" */;
+			buildPhases = (
+				8829B45704BDE407631523F1 /* [CP] Check Pods Manifest.lock */,
+				5B5290A9254B142500BA01A1 /* Sources */,
+				5B5290AA254B142500BA01A1 /* Frameworks */,
+				5B5290AB254B142500BA01A1 /* Resources */,
+				B6A3F751F92410D8814F52E1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B5290AF254B142500BA01A1 /* PBXTargetDependency */,
+			);
+			name = sncfUITests;
+			productName = sncfUITests;
+			productReference = 5B5290AD254B142500BA01A1 /* sncfUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B529089254B141F00BA01A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					New,
+				);
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					5B529090254B141F00BA01A1 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					5B5290A1254B142500BA01A1 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 5B529090254B141F00BA01A1;
+					};
+					5B5290AC254B142500BA01A1 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 5B529090254B141F00BA01A1;
+					};
+				};
+			};
+			buildConfigurationList = 5B52908C254B141F00BA01A1 /* Build configuration list for PBXProject "sncf" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5B529088254B141F00BA01A1;
+			productRefGroup = 5B529092254B141F00BA01A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B529090254B141F00BA01A1 /* sncf */,
+				5B5290A1254B142500BA01A1 /* sncfTests */,
+				5B5290AC254B142500BA01A1 /* sncfUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B52908F254B141F00BA01A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B52909C254B142400BA01A1 /* Preview Assets.xcassets in Resources */,
+				5B529099254B142400BA01A1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B5290A0254B142500BA01A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B5290AB254B142500BA01A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07C90909E2C8A7609EBD9977 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sncf-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F3986F427E9A8B2056AA187 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sncf/Pods-sncf-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sncf/Pods-sncf-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sncf/Pods-sncf-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		652BFAE4A41F90E4E3CB20D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sncfTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8829B45704BDE407631523F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sncf-sncfUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6A3F751F92410D8814F52E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sncf-sncfUITests/Pods-sncf-sncfUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sncf-sncfUITests/Pods-sncf-sncfUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sncf-sncfUITests/Pods-sncf-sncfUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B52908D254B141F00BA01A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B5290C3254B14FF00BA01A1 /* TrainSearchView.swift in Sources */,
+				5B52916A254CA6AC00BA01A1 /* PlaceToSit.swift in Sources */,
+				5BDAA62F2555FECC00186EFE /* ClientSettingsView.swift in Sources */,
+				5BB4D443254D9676000CD221 /* TicketCreation.swift in Sources */,
+				5B529110254B679B00BA01A1 /* DateUtils.swift in Sources */,
+				5B529134254C4EA200BA01A1 /* Train.swift in Sources */,
+				5B529177254CB25C00BA01A1 /* LoginView.swift in Sources */,
+				5B529127254C2B6800BA01A1 /* TicketInformationView.swift in Sources */,
+				5B529122254C2AE600BA01A1 /* ReservationView.swift in Sources */,
+				5B52912C254C4E4300BA01A1 /* ToStation.swift in Sources */,
+				5BB4D43A254CD00D000CD221 /* UserTicketsView.swift in Sources */,
+				5BDAA6172555949900186EFE /* TestDataCreation.swift in Sources */,
+				5B529139254C4EE800BA01A1 /* Ticket.swift in Sources */,
+				5B5290DF254B222600BA01A1 /* AvailableTrainsView.swift in Sources */,
+				5BDAA6272555D4C400186EFE /* RegistrationView.swift in Sources */,
+				5B529162254C9BC500BA01A1 /* Queries.swift in Sources */,
+				5B1BF86D254DD23600ADF200 /* TicketView.swift in Sources */,
+				5B52915A254C599900BA01A1 /* FromStation.swift in Sources */,
+				5B529172254CB19D00BA01A1 /* ClientView.swift in Sources */,
+				5B529143254C508200BA01A1 /* Client.swift in Sources */,
+				5B5290FA254B33DF00BA01A1 /* CitySelectionView.swift in Sources */,
+				5B5290F2254B2E8800BA01A1 /* Journey.swift in Sources */,
+				5B1BF868254DD14D00ADF200 /* Reduction.swift in Sources */,
+				5B52914D254C50F900BA01A1 /* Wagon.swift in Sources */,
+				5B529095254B141F00BA01A1 /* sncfApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B52909E254B142500BA01A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B5290A9254B142500BA01A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B5290A4254B142500BA01A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B529090254B141F00BA01A1 /* sncf */;
+			targetProxy = 5B5290A3254B142500BA01A1 /* PBXContainerItemProxy */;
+		};
+		5B5290AF254B142500BA01A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B529090254B141F00BA01A1 /* sncf */;
+			targetProxy = 5B5290AE254B142500BA01A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5B5290B4254B142500BA01A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5B5290B5254B142500BA01A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B5290B7254B142500BA01A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBA26724C0294E0EDFDB4494 /* Pods-sncf.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"sncf/Preview Content\"";
+				DEVELOPMENT_TEAM = 5P2FR5PR26;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = sncf/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mv.sncf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B5290B8254B142500BA01A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DC5D2EB381A59A36E6E64C9 /* Pods-sncf.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"sncf/Preview Content\"";
+				DEVELOPMENT_TEAM = 5P2FR5PR26;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = sncf/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mv.sncf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5B5290BA254B142500BA01A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62AD2B402990BEFCC2BD1E69 /* Pods-sncfTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5P2FR5PR26;
+				INFOPLIST_FILE = sncfTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mv.sncfTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sncf.app/sncf";
+			};
+			name = Debug;
+		};
+		5B5290BB254B142500BA01A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FA984B6C080972DB34C2CE3 /* Pods-sncfTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5P2FR5PR26;
+				INFOPLIST_FILE = sncfTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mv.sncfTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sncf.app/sncf";
+			};
+			name = Release;
+		};
+		5B5290BD254B142500BA01A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 039EB877E437AC25D89DECF0 /* Pods-sncf-sncfUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5P2FR5PR26;
+				INFOPLIST_FILE = sncfUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mv.sncfUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = sncf;
+			};
+			name = Debug;
+		};
+		5B5290BE254B142500BA01A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 790812E5B69CBFFCF9791642 /* Pods-sncf-sncfUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5P2FR5PR26;
+				INFOPLIST_FILE = sncfUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mv.sncfUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = sncf;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B52908C254B141F00BA01A1 /* Build configuration list for PBXProject "sncf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B5290B4254B142500BA01A1 /* Debug */,
+				5B5290B5254B142500BA01A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B5290B6254B142500BA01A1 /* Build configuration list for PBXNativeTarget "sncf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B5290B7254B142500BA01A1 /* Debug */,
+				5B5290B8254B142500BA01A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B5290B9254B142500BA01A1 /* Build configuration list for PBXNativeTarget "sncfTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B5290BA254B142500BA01A1 /* Debug */,
+				5B5290BB254B142500BA01A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B5290BC254B142500BA01A1 /* Build configuration list for PBXNativeTarget "sncfUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B5290BD254B142500BA01A1 /* Debug */,
+				5B5290BE254B142500BA01A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B529089254B141F00BA01A1 /* Project object */;
+}
