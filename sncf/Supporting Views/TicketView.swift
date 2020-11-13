@@ -24,13 +24,13 @@ struct TicketView: View {
                 VStack(alignment: .trailing) {
                     HStack {
                         Text("Voiture: \(ticket.placesToSit[0].wagon[0].wagonNumber)")
-                        Image(systemName: ticket.placesToSit[0].windowPlace ? "wifi": "wifi.slash")
+                        Image(systemName: ticket.placesToSit[0].wagon[0].hasWifi ? "wifi": "wifi.slash")
                             .font(.footnote)
                             .foregroundColor(Color.gray)
                     }
                     HStack {
                         Text("Place assise: \(ticket.placesToSit[0].placeNumber)")
-                        Image(systemName: ticket.placesToSit[0].wagon[0].hasWifi ? "macwindow": "ellipsis")
+                        Image(systemName: ticket.placesToSit[0].windowPlace ? "macwindow": "ellipsis")
                             .font(.footnote)
                             .foregroundColor(Color.gray)
                     }
