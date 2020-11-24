@@ -1,6 +1,7 @@
 # sncf-app
 
-![img](https://raw.githubusercontent.com/m-rtin/sncf-app/main/start.png)
+<img src="https://raw.githubusercontent.com/m-rtin/sncf-app/main/start.png" width="200">
+
 
 ## How to run the app?
 1. Clone this repo
