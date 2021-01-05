@@ -86,7 +86,7 @@ func getAvailableJournies(tickets: RealmSwift.List<Ticket>, fromCity: String, to
     return results
 }
 
-// Count how many free plaes are left
+// Count how many free places are left
 func getNumberOfDisponiblePlaces(journey: Journey) -> Int {
     var numberOfPlaces = 0
     
